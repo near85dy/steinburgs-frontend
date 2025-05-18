@@ -1,0 +1,1 @@
+export const API_URL = "https://3000-idx-notes-1745567352477.cluster-6frnii43o5blcu522sivebzpii.cloudworkstations.dev/api/v1/"
