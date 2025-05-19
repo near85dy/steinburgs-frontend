@@ -16,17 +16,16 @@ function TaskPage()
         fetchTasks();
     }, [])
 
-    return (<>
-            <div className=".bg-red-500">
-                {tasks.map((task) => (
-                    <div key={task.id} className=".inline-block">
-                        <a>{task.title}</a> 
-                        <a>{task.description}</a>
-                    </div>
-                ))}
-            </div>
-        </>)
+    return (
+        <div className="space-y-4">
+            {tasks.map((task) => (
+                <div key={task.id} className="p-4 bg-white rounded-lg shadow">
+                    <h3 className="text-lg font-semibold text-gray-800">{task.title}</h3>
+                    <p className="text-gray-600 mt-2">{task.description}</p>
+                </div>
+            ))}
+        </div>
+    )
 }
-
 
 export default TaskPage;
